@@ -24,6 +24,10 @@ if (isset($_POST['submit'])) {
     // Now, store user contact and car price in session variables
     $_SESSION['user_contact'] = $_SESSION['contact'];
     $_SESSION['car_price'] = $values['PricePerDay'];
+    $_SESSION['carName'] = $values['VehiclesTitle'];
+    // $_SESSION['carDescription'] = $values['VehiclesOverview'];
+
+    
     header("Location: mpesa/index.php");
 
   } else {
